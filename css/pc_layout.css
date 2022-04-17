@@ -1,0 +1,454 @@
+@charset "utf-8";
+
+/* 상단헤더서식 */
+header{
+    height: 170px;
+    background-color: #f7f5f5;
+}
+.h_top{
+    width: 1200px;
+    margin: 0px auto;
+    position: relative;
+}
+.h_top > h1{
+    position: relative;
+    top: 40px;
+    width: 140px;
+}
+.h_top > h1 img{width: 100%;}
+/* 상단 lnb */
+.lnb > ul{
+    display: flex;
+    justify-content: flex-end;
+    transform: translateY(-20px);
+}
+.lnb > ul > li{
+    margin: 0px 12px;
+}
+.lnb > ul > li > a{
+    color: #333;
+    font-size: 13px;
+}
+.lnb > ul > li > a:hover{text-decoration: underline;}
+/* 검색폼 */
+.h_top > fieldset{
+    position: absolute; right: 0px; top: 76px;
+    border: none;
+}
+fieldset > legend{display: none;}
+fieldset #search{
+    width: 260px; height: 30px;
+    border-radius: 40px;
+    text-indent: 20px;
+    border: none;
+}
+.fa-search span{display: none;}
+label.fa-search{
+    font-size: 18px;
+    transform: translate(-36px,4px);
+}
+/* 메인nav영역 */
+.h_bottom{
+    width: 100%;
+    height: 48px;
+    background-color: rgba(247,245,245,0.8);
+    position: absolute; top: 122px;
+    z-index: 100;
+    overflow: hidden;
+}
+.h_bottom:hover{
+    height: 460px;
+    transition: 0.5s;
+}
+/* 메인nav */
+.gnb{background: #f7f5f5;}
+.gnb > ul{
+    width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.gnb > ul > li{
+    line-height: 48px;
+    text-align: center;
+    position: relative;
+    padding: 0px 60px;
+}
+.gnb > ul > li > a{
+    color: #e7ada7;
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+}
+.gnb > ul > li > a:hover{
+    color: #f34e7f;
+}
+/* sub메뉴 */
+.sub{
+    position: absolute;
+    width: 100%;
+    left: 0px;
+}
+.sub > li > a{
+    font-size: 14px;
+    font-weight: 500;
+}
+.sub > li > a:hover{color: #e7ada7;}
+
+/* 슬라이드 */
+.slide{position: relative;}
+.swiper-wrapper{position: absolute;}
+.swiper-wrapper img{width: 100%;}
+/* 슬라이드 문구 */
+.item{
+    position: absolute; 
+    bottom: 220px; left: 180px;
+}
+.top{font-size: 24px;}
+.title{
+    font-size: 52px; 
+    font-weight: 500;
+    margin-top: 20px;
+}
+.btn{margin-top: 50px;}
+
+.button{
+    font-size: 14px;
+    padding: 6px 24px;
+    border: 1px solid #000;
+    transition: 0.5s;
+}
+.button:hover{
+    background: #000;
+    color: #fff;
+}
+
+/* 컨텐츠1영역 - 프로테일러 비 벨벳 */
+.con01{
+    width: 100%;
+    height: 1100px;
+    background: #ede0d6;
+}
+.con01 article{
+    padding-top: 150px;
+    width: 1200px;
+    margin: 0px auto;
+    position: relative;
+}
+.c_left img, .c_right img{
+    width: 100%;
+    transition: 0.3s;
+}
+.c_left, .c_right{
+    width: 600px;
+    height: 776.56px;
+    overflow: hidden;
+}
+.c_left{float: left;}
+.c_right{float: right;}
+
+.con01 p{
+    font-size: 70px;
+    font-weight: 900;
+    color: #d31016;
+    text-align: right;
+}
+/* 마우스 오버시 효과 */
+.c_left:hover img{transform: scale(1.2); filter: brightness(70%);}
+.c_right:hover img{transform: scale(1.2); filter: brightness(70%);}
+.c_left:hover .line::before{width: 50%;}
+.c_left:hover .line::after{width: 50%;}
+
+.c_right:hover .line02::before{width: 90%;}
+.c_right:hover .line02::after{width: 90%;}
+
+.line::before {
+    content: "";
+    position: absolute;
+    background: rgba(230, 230, 230, 0.7);
+    display: inline-block;
+    transition: all 0.5s;
+    left: 3%;
+    top: 20%;
+    width: 0%;
+    height: 4px; 
+}
+.line::after {
+  content: "";
+  position: absolute;
+  background: rgba(231,173,167,0.6);
+  display: inline-block;
+  transition: all 0.5s;
+  left: 3%;
+  top: 90%;
+  width: 0%;
+  height: 4px; 
+}
+
+.line02::before {
+    content: "";
+    position: absolute;
+    background: rgba(211,16,22,0.6);
+    display: inline-block;
+    transition: all 0.5s;
+    right: 3%;
+    top: 24%;
+    width: 0%;
+    height: 4px; 
+}
+
+.line02::after {
+  content: "";
+  position: absolute;
+  background: rgba(211,16,22,0.6);
+  display: inline-block;
+  transition: all 0.5s;
+  right: 3%;
+  top: 90%;
+  width: 0%;
+  height: 4px; 
+}
+
+/* 컨텐츠2영역 - 새로운 상품 */
+.con02{
+    width: 1200px;
+    margin: 0px auto;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+.con02 > h3{
+    display: block;
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.shop_btn{
+    text-align: right;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+.button_02{
+    font-size: 14px;
+    padding: 6px 24px;
+    border: 2px solid #000;
+    background: rgba(255,255,255,.5);
+    transition: 0.5s;
+    border-radius: 60px;
+}
+.button_02:hover{
+    background: #000;
+    color: #fff;
+}
+/* 슬라이드 : 새로운 상품 목록 */
+.shop_slide{
+    width: 1200px; height: 460px;
+    text-align: center;
+    position: relative; /* 컨트롤버튼의 기준 */
+    overflow: hidden;
+}
+.shop_slide .swiper-slide img{
+    width: 50%;
+}
+.swiper-slide ul{display: flex;}
+.info{margin-top: 10px;}
+.info > p{line-height: 40px;}
+.info > h4{
+    font-size: 18px;
+    font-weight: 600;
+}
+.price{
+    font-size: 16px;
+    font-weight: 500;
+    color: #d31016;
+}
+/* 상품 아이콘 */
+.shop_slide i{
+    margin-top: 20px;
+    padding: 0px 5px;
+    font-size: 18px;
+}
+/* 컨텐츠3영역 - 벨벳룩 */
+.con03{
+    width: 100%; height: 700px;
+    background: url('../img/con3_bevelvet.jpg') no-repeat;
+}
+.con03 article{
+    padding: 150px 0px;
+    width: 1200px;
+    margin: 0px auto;
+}
+.con03 ul{display: flex;}
+.con03 ul > li{margin-right: 40px; position: relative;}
+.con03 ul > li span{
+    position: absolute; left: 40px; top: 40px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    border: 2px solid #fff;
+    background: rgba(0,0,0,0.6);
+    border-radius: 50px;
+    padding: 9px 12px;
+    transition: 0.3s;
+    display: none;
+}
+.con03 ul > li img{
+    opacity: 70%;
+    transition: 0.3s;
+}
+.con03 ul > li:nth-child(2){width: 300px;}
+.con03 ul > li:nth-child(2) img{width: 100%;}
+.con03 ul > li:last-child{transform: translateY(80px);}
+.con03 ul > li:last-child img{width: 100%;}
+.con03 p{
+    font-size: 80px;
+    font-weight: 900;
+    color: #d31016;
+    text-align: left;
+}
+/* 마우스 오버시 효과 */
+.con03 ul > li img:hover{opacity: 100%; border-radius: 100px;}
+.con03 ul > li:first-child:hover span{display: block;}
+.con03 ul > li:nth-child(2):hover span{display: block;}
+.con03 ul > li:last-child:hover span{display: block;}
+
+/* sns : 제목 */
+.sns{
+    width: 1200px;
+    margin: 0px auto;
+    margin-top: 220px;
+}
+.sns > h3{
+    display: block;
+    text-align: center;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 200px;
+    margin-bottom: 40px;
+}
+.sns >  h3 > img{
+    transform: translate(8px,8px);
+    padding-right: 10px;
+}
+.id_name{
+    font-size: 20px;
+    text-transform: none;
+}
+/* sns : 사진목록 그리드 */
+.sns_grid{
+    width: 1200px;
+    margin: 0px auto;
+    display:grid;
+    box-sizing: border-box;
+    grid-gap: 0.5%;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "g1 g2 g3"
+      "g4 g5 g6"
+      "g7 g8 g9";
+}
+.g1{grid-area: g1; filter: brightness(50%);}
+.g2{grid-area: g2;}
+.g3{grid-area: g3;}
+.g4{grid-area: g4;}
+.g5{grid-area: g5;}
+.g6{grid-area: g6;}
+.g7{grid-area: g7;}
+.g8{grid-area: g8;}
+.g9{grid-area: g9;}
+.sns_grid img{width: 100%;}
+.sns_grid img:hover{opacity: 60%;}
+
+/* top btn */
+aside{
+    position: fixed;
+    bottom: 20px; right: 20px;
+    z-index: 10000;
+}
+
+/* 하단푸터서식 */
+footer{
+    margin-top: 100px;
+    background-color: #333333;
+    height: 480px;
+}
+.f_top{
+    background: #464545;
+    height: 60px;
+}
+.f_nav, .f_info, address{
+    width: 1200px;
+    margin: 0px auto;
+}
+.f_lnb{
+    display: flex;
+    width: 400px;
+    justify-content: space-around;
+}
+.f_lnb > li > a{
+    line-height: 60px;
+    font-size: 12px;
+    color: #fff;
+}
+.f_lnb > li > a:hover{text-decoration: underline;}
+
+.f_nav dl{
+    width: 500px;
+    position: absolute; right: 0px;
+    color: #fff;
+    display: flex;
+    font-size: 13px;
+    transform: translateY(-38px);
+}
+.f_nav dt{margin-right: 18px;}
+.f_nav dd a, .f_nav dt a{color: #fff;}
+/* 푸터 정보 */
+.f_info{
+    clear: right;
+    padding: 20px 0px;
+}
+.f_info dt, .f_sns span{display: none;}
+.f_info dl{
+    display: flex;
+    justify-content: space-between;
+}
+.f_info dd{
+    font-size: 16px;
+    color: #ccc;
+    line-height: 46px;
+}
+.number{
+    width: 360px;
+    font-size: 36px;
+    color: #fff;
+    font-weight: 400;
+}
+/* 푸터 메뉴 */
+.f_menu{width: 440px;}
+.f_menu > li{
+    font-size: 16px;
+    line-height: 42px;
+    text-align: right;
+}
+.f_menu > li a{color: #fff;}
+/* sns */
+.f_sns a{
+    color: #fff;
+    font-size: 24px;
+    padding: 0px 16px;
+}
+.f_sns{width: 400px; transform: translateX(40px);}
+
+/* 푸터 주소영역 서식 */
+footer address{
+    border-top: 1px solid #ccc;
+    padding-top: 14px;
+    font-size: 14px;
+    color: #ccc;
+    line-height: 24px;
+}
+footer address > .a_info{
+    float: left; width: 550px;
+    margin-left: 10px;
+}
+footer address > .a_pay{float: right; width: 520px;}

@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>espoir</title>
+    <!-- 즐겨찾기 추가시 생성되는 파비콘 삽입 -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <!-- 초기화 -->
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <!--공통 서식 -->
+    <link rel="stylesheet" href="./css/base.css" type="text/css">
+    <!-- 레이아웃 -->
+    <link rel="stylesheet" href="./css/pc_layout.css" type="text/css">
+    <link rel="stylesheet" href="./css/mobile_layout.css" type="text/css">
+    <link rel="stylesheet" href="./css/tablet_layout.css" type="text/css">
+    <!-- 슬라이드 서식 -->
+    <link rel="stylesheet" href="./css/swiper.css" type="text/css">
+    <script src="./script/swiper.js"></script>
+     <!-- 공급업체 접두사 자동으로 붙여주는 스크립트 소스 -->
+   <script src="./script/prefixfree.min.js"></script>
+   <!-- 폰트어썸 아이콘을 사용하기 위한 링크 주소 -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <input type="checkbox" id="toggle">
+    <!-- 상단 헤더영역 -->
+    <header>
+        <div class="h_top">
+            <!-- 왼쪽 상단 Logo -->
+            <h1><a href="index.html" title="메인페이지로 바로가기">
+                <img src="./img/logo_b_m.png" alt="상단로고"></a></h1>
+                <!-- 오른쪽 상단 lnb -->
+                <nav class="lnb">
+                    <ul>
+                        <li><a href="login.html" title="로그인">로그인</a></li>
+                        <li><a href="join.html" title="회원가입">회원가입</a></li>
+                        <li><a href="order.html" title="주문조회">주문조회</a></li>
+                        <li><a href="cart.html" title="장바구니">장바구니</a></li>
+                    </ul>
+                </nav>
+                <!-- 검색폼 -->
+                <fieldset>
+                    <legend>검색</legend>
+                    <input type="search" id="search" placeholder="공식몰 ONLY, SPECIAL GIFT" maxlength="20">
+                    <label for="search" class="fas fa-search"><span>검색버튼</span></label>
+                </fieldset>
+        </div>
+        <!-- mobile ver 장바구니 아이콘 -->
+        <i class="fas fa-shopping-cart"></i>
+        <!-- mobile ver 전체메뉴 아이콘 -->
+        <label for="toggle" class="fas fa-bars"></label>
+        <!-- 메인 nav -->
+        <div class="h_bottom">
+            <!-- mobile ver 닫기버튼 아이콘 -->
+            <label for="toggle" class="fas fa-times"></label>
+            <nav class="gnb">
+                <ul>
+                    <li><a href="about.html" title="ABOUT">ABOUT</a></li>
+
+                    <li><a href="shop.html" title="SHOP">SHOP</a>
+                      <i class="fas fa-angle-down"></i>
+                      <ul class="sub">
+                        <li><a href="new.html" title="NEW">NEW</a></li>
+                        <li><a href="best.html" title="BEST">BEST</a></li>
+                        <li><a href="face.html" title="FACE">FACE</a></li>
+                        <li><a href="lip.html" title="LIP">LIP</a></li>
+                        <li><a href="eye.html" title="EYE">EYE</a></li>
+                        <li><a href="sun.html" title="SUN">SUN</a></li>
+                        <li><a href="other.html" title="OTHER">OTHER</a></li>
+                        <li><a href="lb.html" title="LOOK BOOK">LOOK BOOK</a></li>
+                      </ul>
+                    </li>
+
+                    <li><a href="artist.html" title="ARTIST SERVICE">ARTIST SERVICE</a>
+                      <i class="fas fa-angle-down"></i>
+                      <ul class="sub">
+                        <li><a href="on_con.html" title="ONLINE CONSULTING">ONLINE CONSULTING</a></li>
+                        <li><a href="off_con.html" title="OFFLINE CONSULTING">OFFLINE CONSULTING</a></li>
+                        <li><a href="t_up.html" title="TOUCH UP">TOUCH UP</a></li>
+                        <li><a href="e_bar.html" title="EYEBROW BAR">EYEBROW BAR</a></li>
+                      </ul>
+                    </li>
+
+                    <li><a href="play.html" title="&PLAY">&PLAY</a>
+                      <i class="fas fa-angle-down"></i>
+                      <ul class="sub">
+                        <li><a href="a_play.html" title="POWDER&PLAY">POWDER&PLAY</a></li>
+                        <li><a href="b_play.html" title="GLITTER&PLAY">GLITTER&PLAY</a></li>
+                      </ul>
+                    </li>
+
+                    <li><a href="comu.html" title="COMMUNITY">COMMUNITY</a>
+                        <i class="fas fa-angle-down"></i>
+                        <ul class="sub">
+                          <li><a href="notice.html" title="NOTICE">NOTICE</a></li>
+                          <li><a href="qna.html" title="Q&A">Q&A</a></li>
+                          <li><a href="event.html" title="EVENT">EVENT</a></li>
+                          <li><a href="re.html" title="REVIEW">REVIEW</a></li>
+                          <li><a href="store.html" title="STORE">STORE</a></li>
+                        </ul>
+                      </li>
+                      </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 메인 콘텐츠 영역 -->
+    <main>
+        <!-- slide : pc ver -->
+        <article class="slide">
+            <h3>슬라이드</h3>
+            <div class="swiper mySwiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><a href="a.html" title="배너01">
+                 <img src="./img/banner01.jpg" alt="배너01">
+                </a>
+                 <div class="item">
+                     <p class="top">공식몰 ONLY</p>
+                     <p class="title">공식몰 단독 기획 세트 UP TO 50%</p>
+                     <p class="btn">
+                        <a href="#" title="sale" class="button">50% OFF</a>
+                    </p>
+                 </div>
+                </div>
+
+              <div class="swiper-slide"><a href="b.html" title="배너02">
+                 <img src="./img/banner02.jpg" alt="배너02">
+                 </a>
+                 <div class="item">
+                    <p class="top">Special Gift</p>
+                    <p class="title">WASHED PINK SET 프로모션</p>
+                    <p class="btn">
+                        <a href="#" title="sale" class="button">~31% OFF</a>
+                        <a href="#" title="gift" class="button">GIFT</a>
+                   </p>
+                </div>
+               </div>
+
+              <div class="swiper-slide"><a href="c.html" title="배너03">
+                 <img src="./img/banner03.jpg" alt="배너03">
+                 </a>
+                 <div class="item">
+                    <p class="top">NEW</p>
+                    <p class="title">비 벨벳 파운데이션 UP TO 30% </p>
+                    <p class="btn">
+                       <a href="#" title="sale" class="button">30% OFF</a>
+                   </p>
+                </div>
+             </div>
+
+              <div class="swiper-slide"><a href="d.html" title="배너04">
+                 <img src="./img/banner04.jpg" alt="배너04">
+                 </a>
+                 <div class="item">
+                    <p class="top">NEW</p>
+                    <p class="title">얇지만 강력한 #반전 커버, 비 벨벳 쿠션</p>
+                    <p class="btn">
+                       <a href="#" title="sale" class="button">30% OFF</a>
+                   </p>
+                </div>
+                </div>
+
+              <div class="swiper-slide"><a href="e.html" title="배너05">
+                 <img src="./img/banner05.jpg" alt="배너05">
+                 </a>
+                 <div class="item">
+                    <p class="top">공식몰 EVENT</p>
+                    <p class="title">HAPPY WHITE DAY</p>
+                    <p class="btn">
+                       <a href="#" title="sale" class="button">~40% OFF</a>
+                       <a href="#" title="gift" class="button">GIFT</a>
+                   </p>
+                </div>
+                </div>
+            </div>
+            <!-- 슬라이드의 좌, 우에 방향표시 버튼 -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- 페이지 위치를 표시하기 위한 컨트롤 버튼 나오게 하기 -->
+            <div class="swiper-pagination"></div>
+        </div>
+        </article>
+
+        <!-- slide : mobile ver -->
+        <article class="m_slide">
+            <h3>슬라이드</h3>
+            <div class="swiper mySwiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><a href="a.html" title="배너01">
+                 <img src="./img/m_banner01.jpg" alt="배너01">
+                 </a>
+                 <div class="item">
+                     <p class="top">공식몰 ONLY</p>
+                     <p class="title">공식몰 단독 기획 세트 UP TO 50%</p>
+                     <p class="btn">
+                        <a href="#" title="sale" class="button">50% OFF</a>
+                    </p>
+                 </div>
+                </div>
+
+              <div class="swiper-slide"><a href="b.html" title="배너02">
+                 <img src="./img/m_banner02.jpg" alt="배너02">
+                 </a>
+                 <div class="item">
+                    <p class="top">Special Gift</p>
+                    <p class="title">WASHED PINK SET<br>프로모션</p>
+                    <p class="btn">
+                        <a href="#" title="sale" class="button">~31% OFF</a>
+                        <a href="#" title="gift" class="button">GIFT</a>
+                   </p>
+                </div>
+                </div>
+
+              <div class="swiper-slide"><a href="c.html" title="배너03">
+                 <img src="./img/m_banner03.jpg" alt="배너03">
+                 </a>
+                 <div class="item">
+                    <p class="top">NEW</p>
+                    <p class="title">비 벨벳 파운데이션<br>UP TO 30% </p>
+                    <p class="btn">
+                       <a href="#" title="sale" class="button">30% OFF</a>
+                   </p>
+                </div>
+                </div>
+
+              <div class="swiper-slide"><a href="d.html" title="배너04">
+                 <img src="./img/m_banner04.jpg" alt="배너04">
+                 </a>
+                 <div class="item">
+                    <p class="top">NEW</p>
+                    <p class="title">얇지만 강력한<br>#반전 커버, 비 벨벳 쿠션</p>
+                    <p class="btn">
+                       <a href="#" title="sale" class="button">30% OFF</a>
+                   </p>
+                </div>
+                </div>
+
+              <div class="swiper-slide"><a href="e.html" title="배너05">
+                 <img src="./img/m_banner05.jpg" alt="배너05">
+                 </a>
+                 <div class="item">
+                    <p class="top">공식몰 EVENT</p>
+                    <p class="title">HAPPY WHITE DAY</p>
+                    <p class="btn">
+                       <a href="#" title="sale" class="button">~40% OFF</a>
+                       <a href="#" title="gift" class="button">GIFT</a>
+                   </p>
+                </div>
+                </div>
+            </div>
+            <!-- 슬라이드의 좌, 우에 방향표시 버튼 -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        </article>
+        
+        <div class="con01">
+        <article>
+            <h3>프로테일러 비 벨벳</h3>
+            <div class="c_left">
+            <img src="./img/l_con1.jpg" alt="PRO TAILOR">
+            <div class="line"></div>
+            </div>
+            <p>PRO TAILOR</p>
+            <div class="c_right">
+            <img src="./img/r_con1.png" alt="BE VELVET">
+            <div class="line02"></div>
+            </div>
+            <p>BE VELVET</p>
+        </article>
+        </div>
+
+        <!-- con02 : pc ver -->
+        <article class="con02">
+            <h3>NEW</h3>
+            <p class="shop_btn">
+                <a href="#" title="" class="button_02">view more</a>
+            </p>
+            
+            <div class="swiper shop_slide">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <!-- 상품목록 -->
+                      <ul>
+                          <li>
+                             <a href="n_shop" title="상품 상세보기"><img src="./img/con2_1.png" alt="상품1"></a>
+                              <div class="info">
+                                  <h4>프로 테일러 파운데이션 비 벨벳</h4>
+                                  <p>#컴포트매트 #벨벳파데</p>
+                                  <span class="price">&#8361; 28,000</span>
+                                  <br>
+                                  <a href="#"><i class="far fa-heart"></i></a>
+                                  <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
+                              </div>
+                          </li>
+                          <li>
+                            <a href="n_shop" title="상품 상세보기"><img src="./img/con2_2.png" alt="상품2"></a>
+                            <div class="info">
+                                <h4>프로 테일러 비 벨벳 커버 쿠션 (단품+리필)</h4>
+                                <p>#반전커버 #레드쿠션</p>
+                                <span class="price">&#8361; 26,600</span>
+                                <br>
+                                <a href="#"><i class="far fa-heart"></i></a>
+                                <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="n_shop" title="상품 상세보기"><img src="./img/con2_3.png" alt="상품3"></a>
+                            <div class="info">
+                                <h4>피치 스킨 피팅 베이스</h4>
+                                <p>#말랑복숭아 #밀착지속</p>
+                                <span class="price">&#8361; 19,600</span>
+                                <br>
+                                <a href="#"><i class="far fa-heart"></i></a>
+                                <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
+                            </div>
+                        </li>
+                      </ul>
+                  </div>
+                  <div class="swiper-slide">
+                       <!-- 상품목록 -->
+                       <ul>
+                        <li>
+                            <a href="n_shop" title="상품 상세보기"><img src="./img/con2_4.png" alt="상품4"></a>
+                            <div class="info">
+                                <h4>꾸뛰르 립 틴트 벨벳</h4>
+                                <p>#고퀄벨벳 #원조MLBB</p>
+                                <span class="price">&#8361; 14,000</span>
+                                <br>
+                                <a href="#"><i class="far fa-heart"></i></a>
+                                <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
+                            </div>
+                        </li>
+                        <li>
+                         <a href="n_shop" title="상품 상세보기"><img src="./img/con2_5.png" alt="상품5"></a>
+                          <div class="info">
+                              <h4>꾸뛰르 립 틴트 워터 벨벳</h4>
+                              <p>#비건픽싱 #청량컬러</p>
+                              <span class="price">&#8361; 14,000</span>
+                              <br>
+                              <a href="#"><i class="far fa-heart"></i></a>
+                              <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
+                          </div>
+                      </li>
+                      <li>
+                        <a href="n_shop" title="상품 상세보기"><img src="./img/con2_6.png" alt="상품6"></a>
+                          <div class="info">
+                              <h4>꾸뛰르 립틴트 샤인</h4>
+                              <p>#고급광틴트 #촉맑탱</p>
+                              <span class="price">&#8361; 14,000</span>
+                              <br>
+                              <a href="#"><i class="far fa-heart"></i></a>
+                              <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
+                          </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="swiper-pagination dot"></div>
+              </div>
+        </article>
+
+        <!-- con02 : mobile ver -->
+        <article class="m_con02">
+            <h3>New</h3>
+            <p class="shop_btn">
+                <a href="#" title="" class="button_02">view more</a>
+            </p>
+                 <div class="swiper shop_slide">
+                     <div class="swiper-wrapper">
+                         <div class="swiper-slide">
+                            <!-- 상품목록 -->
+                             <ul>
+                                 <li>
+                                     <a href="n_shop" title="상품 상세보기"><img src="./img/con2_1.png" alt="상품1"></a>
+                                        <div class="info">
+                                              <h4>프로 테일러 파운데이션<br>비 벨벳</h4>
+                                              <p>#컴포트매트 #벨벳파데</p>
+                                              <span class="price">&#8361; 28,000</span>
+                                              <br>
+                                              <a href="#"><i class="far fa-heart"></i></a>
+                                              <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
+                                          </div>
+                                      </li>
+                                      <li>
+                                        <a href="n_shop" title="상품 상세보기"><img src="./img/con2_2.png" alt="상품2"></a>
+                                        <div class="info">
+                                            <h4>프로 테일러 비 벨벳 커버 쿠션 <br>(단품+리필)</h4>
+                                            <p>#반전커버 #레드쿠션</p>
+                                            <span class="price">&#8361; 26,600</span>
+                                            <br>
+                                            <a href="#"><i class="far fa-heart"></i></a>
+                                            <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
+                                        </div>
+                                    </li>
+                                  </ul>
+                              </div>
+                              <div class="swiper-slide">
+                                   <!-- 상품목록 -->
+                                   <ul>
+                                    <li>
+                                        <a href="n_shop" title="상품 상세보기"><img src="./img/con2_3.png" alt="상품3"></a>
+                                        <div class="info">
+                                            <h4>피치 스킨 피팅 베이스</h4>
+                                            <p>#말랑복숭아 #밀착지속</p>
+                                            <span class="price">&#8361; 19,600</span>
+                                            <br>
+                                            <a href="#"><i class="far fa-heart"></i></a>
+                                            <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="n_shop" title="상품 상세보기"><img src="./img/con2_4.png" alt="상품4"></a>
+                                        <div class="info">
+                                            <h4>꾸뛰르 립 틴트 벨벳</h4>
+                                            <p>#고퀄벨벳 #원조MLBB</p>
+                                            <span class="price">&#8361; 14,000</span>
+                                            <br>
+                                            <a href="#"><i class="far fa-heart"></i></a>
+                                            <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
+                                        </div>
+                                    </li>
+                                </ul>
+                              </div>
+                              <div class="swiper-slide">
+                                <!-- 상품목록 -->
+                                <ul>
+                              <li>
+                                <a href="n_shop" title="상품 상세보기"><img src="./img/con2_5.png" alt="상품5"></a>
+                                 <div class="info">
+                                     <h4>꾸뛰르 립 틴트 워터 벨벳</h4>
+                                     <p>#비건픽싱 #청량컬러</p>
+                                     <span class="price">&#8361; 14,000</span>
+                                     <br>
+                                     <a href="#"><i class="far fa-heart"></i></a>
+                                     <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
+                                 </div>
+                             </li>
+                             <li>
+                               <a href="n_shop" title="상품 상세보기"><img src="./img/con2_6.png" alt="상품6"></a>
+                                 <div class="info">
+                                     <h4>꾸뛰르 립틴트 샤인</h4>
+                                     <p>#고급광틴트 #촉맑탱</p>
+                                     <span class="price">&#8361; 14,000</span>
+                                     <br>
+                                     <a href="#"><i class="far fa-heart"></i></a>
+                                     <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
+                                 </div>
+                             </li>
+                             </ul>
+                             </div>
+                            </div>
+                            <div class="swiper-pagination dot"></div>
+                          </div>
+        </article>
+
+        <div class="con03">
+        <article>
+            <h3>벨벳룩</h3>
+            <ul>
+                <li><a href="#"><img src="./img/v_look.jpg" alt="벨벳룩1">
+                </a>
+                <span><i class="fa-solid fa-plus"></i></span>
+            </li>
+
+                <li><a href="#"><img src="./img/v_look0.jpg" alt="벨벳룩2">
+                 </a>
+                 <span><i class="fa-solid fa-plus"></i></span>
+                </li>
+
+                <li><a href="#"><img src="./img/v_look2.jpg" alt="벨벳룩3">
+                 </a>
+                 <span><i class="fa-solid fa-plus"></i></span>
+                </li>
+            </ul>
+            <p>BE VELVET LOOK</p>
+        </article>
+        </div>
+
+        <article class="sns">
+            <h3>
+                <img src="./img/ico_insta_b.png" alt="인스타그램">instagram<br>
+                <span class="id_name">@espoir_makeup</span>
+            </h3>
+
+            <ul class="sns_grid">
+                <li class="g1"><a href="#"><img src="./img/sns03.jpg" alt=""></a></li>
+                <li class="g2"><a href="#"><img src="./img/sns02.jpg" alt=""></a></li>
+                <li class="g3"><a href="#"><img src="./img/sns03.jpg" alt=""></a></li>
+                <li class="g4"><a href="#"><img src="./img/sns04.jpeg" alt=""></a></li>
+                <li class="g5"><a href="#"><img src="./img/sns05.jpeg" alt=""></a></li>
+                <li class="g6"><a href="#"><img src="./img/sns06.jpeg" alt=""></a></li>
+                <li class="g7"><a href="#"><img src="./img/sns07.jpeg" alt=""></a></li>
+                <li class="g8"><a href="#"><img src="./img/sns08.jpeg" alt=""></a></li>
+                <li class="g9"><a href="#"><img src="./img/sns09.jpeg" alt=""></a></li>
+            </ul>
+        </article>
+
+        <!-- top btn -->
+        <aside>
+            <a href="#"><img src="./img/btn_top.png" alt="상단으로 가기"></a>
+        </aside>
+    
+    </main>
+
+    <!-- 하단 푸터영역 -->
+    <footer>
+        <div class="f_top">
+            <nav class="f_nav">
+                <ul class="f_lnb">
+                    <li><a href="b.html" title="개인정보처리방침">
+                        개인정보처리방침
+                    </a></li>
+                    <li><a href="e.html" title="쇼밍몰약관">
+                        쇼핑몰 이용약관
+                    </a></li>
+                </ul>
+                <dl>
+                    <dt><a href="notice.html" title="공지사항 페이지로 이동하기">공지사항</a></dt>
+                    <dd><a href="notice.html" title="[공지]고객상담실 유선 상담시간 변경 공지">
+                        [공지] 고객상담실 유선 상담시간 변경 공지</a>
+                        <span><i class="fa-solid fa-plus"></i></span>
+                    </dd>
+                </dl>
+            </nav>
+        </div>
+        <div class="f_info">
+            <dl>
+                <dt>푸터영역 정보</dt>
+                <dd>
+                    <h3>고객센터</h3>
+                    <p class="number">080 619 8888</p>
+                    <p>상담시간 13:00 ~ 17:00
+                      (월~금, 공휴일 제외)</p>
+                </dd>
+                <dd>
+                    <h3>MAKE UP</h3>
+                    <p class="number">BEAUTY COUNSELING</p>
+                    <p>언제 어디서든 언택트!
+                      아티스트와 상담하세요!</p>
+                </dd>
+                <dd class="f_sns">
+                    <a href="i.html" title="instagram" class="fab fa-instagram"><span>instagram</span></a>
+                    <a href="t.html" title="twitter" class="fab fa-twitter"><span>twitter</span></a>
+                    <a href="f.html" title="facebook" class="fab fa-facebook-f"><span>facebook</span></a>
+                </dd>
+                <ul class="f_menu">
+                    <li><a href="#" title="주문조회">비회원주문조회</a></li>
+                    <li><a href="#" title="매장찾기">매장찾기</a></li>
+                    <li><a href="#" title="브랜드소개">브랜드 소개</a></li>
+                    <li><a href="#" title="맴버십">맴버십</a></li>
+                    <li><a href="#" title="사이트맵">사이트맵</a></li>
+                </ul>
+            </dl>
+        </div>
+        <address>
+            <p class="a_info">
+                (주)에스쁘아 대표이사: 최민정<br>
+                본사 : 서울특별시 용산구 한강대로 100 (한강로2가) 6층<br>
+                사업자번호: 104-86-58598&nbsp;&nbsp;&nbsp;통신판매업신고번호 : 제 2017-서울용산-1293호
+            </p>
+            <p class="a_pay">
+                개인정보보호책임자: 권세은<br>
+                고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한 이니시스 구매안전 서비스(에스크로)를 이용하실 수 있습니다.
+                <br>Copyright &copy; 2021 espoir. All Rights Reserved.
+            </p>
+            
+        </address>
+    </footer>
+
+    <!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    let shop = new Swiper('.shop_slide',{
+        pagination : {
+            el: ".swiper-pagination",
+            clickable: true,
+        }
+    });
+  </script>
+  <script>
+      $(function(){
+          const t_btn = $('aside a');
+          t_btn.click(function(){
+              $('htm, body').animate({scrollTop:'0px'},500);
+              return false;
+          });
+      });
+  </script>
+</body>
+</html>

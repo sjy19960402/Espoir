@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>espoir_notice</title>
+    <style>
+        section{
+            width: 100%;
+            margin: 0px auto;
+            transform: translateY(100px);
+        }
+        iframe{
+            width: 100%;
+            border: 0px;
+            height: 800px;
+        }
+    </style>
+    <!-- 즐겨찾기 추가시 생성되는 파비콘 삽입 -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <!-- 초기화 -->
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <!--공통 서식 -->
+    <link rel="stylesheet" href="./css/base.css" type="text/css">
+    <!-- 레이아웃 -->
+    <link rel="stylesheet" href="./css/pc_layout.css" type="text/css">
+     <!-- 공급업체 접두사 자동으로 붙여주는 스크립트 소스 -->
+   <script src="./script/prefixfree.min.js"></script>
+   <!-- 폰트어썸 아이콘을 사용하기 위한 링크 주소 -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- 상단 헤더영역 -->
+    <header>
+        <div class="h_top">
+            <!-- 왼쪽 상단 Logo -->
+            <h1><a href="index.html" title="메인페이지로 바로가기">
+                <img src="./img/logo_b_m.png" alt="상단로고"></a></h1>
+                <!-- 오른쪽 상단 lnb -->
+                <nav class="lnb">
+                    <ul>
+                        <li><a href="login.html" title="로그인">로그인</a></li>
+                        <li><a href="join.html" title="회원가입">회원가입</a></li>
+                        <li><a href="order.html" title="주문조회">주문조회</a></li>
+                        <li><a href="cart.html" title="장바구니">장바구니</a></li>
+                    </ul>
+                </nav>
+                <!-- 검색폼 -->
+                <fieldset>
+                    <legend>검색</legend>
+                    <input type="search" id="search" placeholder="공식몰 ONLY, SPECIAL GIFT" maxlength="20">
+                    <label for="search" class="fas fa-search"><span>검색버튼</span></label>
+                </fieldset>
+        </div>
+        <!-- 메인 nav -->
+        <div class="h_bottom">
+            <nav class="gnb">
+                <ul>
+                    <li><a href="about.html" title="ABOUT">ABOUT</a></li>
+
+                    <li><a href="shop.html" title="SHOP">SHOP</a>
+                      <i class="fas fa-angle-down"></i>
+                      <ul class="sub">
+                        <li><a href="new.html" title="NEW">NEW</a></li>
+                        <li><a href="best.html" title="BEST">BEST</a></li>
+                        <li><a href="face.html" title="FACE">FACE</a></li>
+                        <li><a href="lip.html" title="LIP">LIP</a></li>
+                        <li><a href="eye.html" title="EYE">EYE</a></li>
+                        <li><a href="sun.html" title="SUN">SUN</a></li>
+                        <li><a href="other.html" title="OTHER">OTHER</a></li>
+                        <li><a href="lb.html" title="LOOK BOOK">LOOK BOOK</a></li>
+                      </ul>
+                    </li>
+
+                    <li><a href="artist.html" title="ARTIST SERVICE">ARTIST SERVICE</a>
+                      <i class="fas fa-angle-down"></i>
+                      <ul class="sub">
+                        <li><a href="on_con.html" title="ONLINE CONSULTING">ONLINE CONSULTING</a></li>
+                        <li><a href="off_con.html" title="OFFLINE CONSULTING">OFFLINE CONSULTING</a></li>
+                        <li><a href="t_up.html" title="TOUCH UP">TOUCH UP</a></li>
+                        <li><a href="e_bar.html" title="EYEBROW BAR">EYEBROW BAR</a></li>
+                      </ul>
+                    </li>
+
+                    <li><a href="play.html" title="&PLAY">&PLAY</a>
+                      <i class="fas fa-angle-down"></i>
+                      <ul class="sub">
+                        <li><a href="a_play.html" title="POWDER&PLAY">POWDER&PLAY</a></li>
+                        <li><a href="b_play.html" title="GLITTER&PLAY">GLITTER&PLAY</a></li>
+                      </ul>
+                    </li>
+
+                    <li><a href="comu.html" title="COMMUNITY">COMMUNITY</a>
+                        <i class="fas fa-angle-down"></i>
+                        <ul class="sub">
+                          <li><a href="notice.html" title="NOTICE">NOTICE</a></li>
+                          <li><a href="qna.html" title="Q&A">Q&A</a></li>
+                          <li><a href="event.html" title="EVENT">EVENT</a></li>
+                          <li><a href="re.html" title="REVIEW">REVIEW</a></li>
+                          <li><a href="store.html" title="STORE">STORE</a></li>
+                        </ul>
+                      </li>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>공지사항</h2>
+            <iframe src="http://s20224.dothome.co.kr/bbs/bbs/board.php?bo_table=notice_01"></iframe>
+        </section>
+    </main>
+
+    <!-- 하단 푸터영역 -->
+    <footer>
+        <div class="f_top">
+            <nav class="f_nav">
+                <ul class="f_lnb">
+                    <li><a href="b.html" title="개인정보처리방침">
+                        개인정보처리방침
+                    </a></li>
+                    <li><a href="e.html" title="쇼밍몰약관">
+                        쇼핑몰 이용약관
+                    </a></li>
+                </ul>
+                <dl>
+                    <dt><a href="notice.html" title="공지사항 페이지로 이동하기">공지사항</dt></a>
+                    <dd><a href="http://s20224.dothome.co.kr/bbs/bbs/board.php?bo_table=notice_01&wr_id=5" title="[공지]고객상담실 유선 상담시간 변경 공지">
+                        [공지] 고객상담실 유선 상담시간 변경 공지</a>
+                        <span><i class="fa-solid fa-plus"></i></span>
+                    </dd>
+                </dl>
+            </nav>
+        </div>
+        <div class="f_info">
+            <dl>
+                <dt>푸터영역 정보</dt>
+                <dd>
+                    <h3>고객센터</h3>
+                    <p class="number">080 619 8888</p>
+                    <p>상담시간 13:00 ~ 17:00
+                      (월~금, 공휴일 제외)</p>
+                </dd>
+                <dd>
+                    <h3>MAKE UP</h3>
+                    <p class="number">BEAUTY COUNSELING</p>
+                    <p>언제 어디서든 언택트!
+                      아티스트와 상담하세요!</p>
+                </dd>
+                <dd class="f_sns">
+                    <a href="i.html" title="instagram" class="fab fa-instagram"><span>instagram</span></a>
+                    <a href="t.html" title="twitter" class="fab fa-twitter"><span>twitter</span></a>
+                    <a href="f.html" title="facebook" class="fab fa-facebook-f"><span>facebook</span></a>
+                </dd>
+                <ul class="f_menu">
+                    <li><a href="#">비회원주문조회</a></li>
+                    <li><a href="#">매장찾기</a></li>
+                    <li><a href="#">브랜드 소개</a></li>
+                    <li><a href="#">맴버십</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                </ul>
+            </dl>
+        </div>
+        <address>
+            <p class="a_info">
+                (주)에스쁘아 대표이사: 최민정<br>
+                본사 : 서울특별시 용산구 한강대로 100 (한강로2가) 6층<br>
+                사업자번호: 104-86-58598&nbsp;&nbsp;&nbsp;통신판매업신고번호 : 제 2017-서울용산-1293호
+            </p>
+            <p class="a_pay">
+                개인정보보호책임자: 권세은<br>
+                고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한 이니시스 구매안전 서비스(에스크로)를 이용하실 수 있습니다.
+                <br>Copyright &copy; 2021 espoir. All Rights Reserved.
+            </p>
+            
+        </address>
+    </footer>
+
+</body>
+</html>
